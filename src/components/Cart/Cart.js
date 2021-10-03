@@ -1,9 +1,7 @@
-import React from 'react';
-import './Cart.css';
+import React from "react";
+import "./Cart.css";
 
-const Cart = (props) => {
-    const { cart } = props;
-
+const Cart = ({ cart, children }) => {
     // const totalReducer = (previous, product) => previous + product.price;
     // const total = cart.reduce(totalReducer, 0);
     let totalQuantity = 0;
@@ -17,7 +15,7 @@ const Cart = (props) => {
     }
 
     const shipping = total > 0 ? 15 : 0;
-    const tax = (total + shipping) * 0.10;
+    const tax = (total + shipping) * 0.1;
     const grandTotal = total + shipping + tax;
     return (
         <div>
@@ -28,6 +26,7 @@ const Cart = (props) => {
             <p>Shipping: {shipping}</p>
             <p>tax: {tax.toFixed(2)}</p>
             <p>Grand Total: {grandTotal.toFixed(2)}</p>
+            {children}
         </div>
     );
 };
