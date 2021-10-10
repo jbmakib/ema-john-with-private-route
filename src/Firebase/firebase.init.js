@@ -31,7 +31,11 @@ step-3: customize
 
 step-4: organize
 1. create a auth context
-2. create a context provider
+2. create a context provider and set a context value
 3. use the Auth provider
 4. create useAuth hook
+
+step-5: private route
+1. create private route
+2. set private route
 */
