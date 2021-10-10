@@ -38,4 +38,7 @@ step-4: organize
 step-5: private route
 1. create private route
 2. set private route
+
+setp-6: optional
+1. redirect after login
 */
