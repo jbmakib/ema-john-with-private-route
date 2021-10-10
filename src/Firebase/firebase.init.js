@@ -21,4 +21,10 @@ step-2: Basic Setup
 1. Create Login Component
 2. Create Register Component
 3. Create Route for Login and register component
+
+step-3: customize
+1. set up sign in method
+2. set up signout method
+3. user state
+4. special observer
 */
